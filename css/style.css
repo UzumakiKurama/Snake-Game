@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: url("../assets/bg.jpg");
+  background-size: 100vw 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#board {
+  background: linear-gradient(rgb(44, 234, 177), rgb(228, 194, 43));
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+  background: linear-gradient(red, yellow);
+  border: 2px solid purple;
+  transform: scale(1.2);
+  border-radius: 5px;
+}
+
+.food {
+  background: linear-gradient(red, purple);
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.snake {
+  background-color: purple;
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+}
+
+#gameScore {
+  font-family: "Rampart One", cursive;
+  position: absolute;
+  top: 9px;
+  right: 200px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#highScore {
+  font-family: "Rampart One", cursive;
+  position: absolute;
+  top: 40px;
+  right: 200px;
+  font-size: 30px;
+  font-weight: bold;
+}
